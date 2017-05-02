@@ -64,7 +64,7 @@ class AboutViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-    //sdsfsdfdsf
+    
     
 
   
