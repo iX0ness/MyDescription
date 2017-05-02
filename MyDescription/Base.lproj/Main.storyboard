@@ -259,18 +259,73 @@
                     <view key="view" contentMode="scaleToFill" id="XYi-jP-ctL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="EPZ-d7-oAp">
+                                <rect key="frame" x="70" y="89" width="235" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="G9I-63-XaM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which came first: the chicken or the egg?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdn-uv-xVW">
+                                <rect key="frame" x="20" y="424" width="335" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="K4M-rO-1w1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="paR-Iu-zqZ">
+                                <rect key="frame" x="80" y="452" width="215" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="lxL-dA-bge"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AzT-Cd-9cr">
+                                <rect key="frame" x="116" y="487" width="143" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.46522317647413802" blue="0.88997549951187005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Zql-mn-Ib3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="17"/>
+                                <state key="normal" title="Answer">
+                                    <color key="titleColor" red="0.91587729849999999" green="0.97680455450000003" blue="0.80019773370000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="answer:" destination="jhv-qr-z81" eventType="touchUpInside" id="1V2-l2-Dy7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89725787885559938" green="1" blue="0.85905769566155132" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qdn-uv-xVW" firstAttribute="leading" secondItem="XYi-jP-ctL" secondAttribute="leading" constant="20" id="2ys-V0-2MQ"/>
+                            <constraint firstItem="EPZ-d7-oAp" firstAttribute="leading" secondItem="XYi-jP-ctL" secondAttribute="leading" constant="70" id="8Kt-je-HmX"/>
+                            <constraint firstItem="AzT-Cd-9cr" firstAttribute="top" secondItem="paR-Iu-zqZ" secondAttribute="bottom" constant="5" id="Gyl-b0-Qgf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AzT-Cd-9cr" secondAttribute="trailing" constant="100" id="NuW-6i-6FO"/>
+                            <constraint firstItem="AzT-Cd-9cr" firstAttribute="leading" secondItem="XYi-jP-ctL" secondAttribute="leadingMargin" constant="100" id="WV1-6V-95m"/>
+                            <constraint firstAttribute="trailing" secondItem="paR-Iu-zqZ" secondAttribute="trailing" constant="80" id="dD0-9E-S8s"/>
+                            <constraint firstItem="EPZ-d7-oAp" firstAttribute="top" secondItem="gf2-GK-S0j" secondAttribute="bottom" constant="25" id="ejG-MZ-IEK"/>
+                            <constraint firstAttribute="trailing" secondItem="EPZ-d7-oAp" secondAttribute="trailing" constant="70" id="hRH-hE-wcX"/>
+                            <constraint firstItem="paR-Iu-zqZ" firstAttribute="leading" secondItem="XYi-jP-ctL" secondAttribute="leading" constant="80" id="pKm-c4-57s"/>
+                            <constraint firstItem="Qdn-uv-xVW" firstAttribute="top" secondItem="EPZ-d7-oAp" secondAttribute="bottom" constant="15" id="sZ2-AU-uSV"/>
+                            <constraint firstItem="paR-Iu-zqZ" firstAttribute="top" secondItem="Qdn-uv-xVW" secondAttribute="bottom" constant="8" id="t0m-ki-crc"/>
+                            <constraint firstAttribute="trailing" secondItem="Qdn-uv-xVW" secondAttribute="trailing" constant="20" id="w5z-6w-5JM"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NJS-Z5-Ubz">
                         <barButtonItem key="leftBarButtonItem" image="tbp" id="Afb-lq-8ml"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="inputText" destination="paR-Iu-zqZ" id="oYZ-ac-eFT"/>
                         <outlet property="menuBarButton" destination="Afb-lq-8ml" id="x5d-rY-9Ot"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zaq-YZ-Ugv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2438" y="854"/>
+            <point key="canvasLocation" x="2437.5999999999999" y="853.22338830584715"/>
         </scene>
         <!--Music View Controller-->
         <scene sceneID="bja-mC-2hu">
