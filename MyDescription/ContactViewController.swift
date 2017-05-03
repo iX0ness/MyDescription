@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import MessageUI
 
-class ContactViewController: UIViewController {
+class ContactViewController: UIViewController, MFMailComposeViewControllerDelegate {
 
     @IBAction func fbLink(_ sender: AnyObject) {
         if let url = NSURL(string: "https://www.facebook.com/misha.levchuk.1") {
@@ -23,6 +24,15 @@ class ContactViewController: UIViewController {
     @IBAction func twLink(_ sender: Any) {
         if let url = NSURL(string: "https://twitter.com/iX0ness") {
             UIApplication.shared.openURL(url as URL)
+        }
+    }
+    @IBAction func sendEmail(_ sender: AnyObject) {
+        let mailComposeViewController = configureMailController()
+        if MFMailComposeViewController.canSendMail() {
+            self.present(mailComposeViewController, animated: true, completion: nil)
+            
+        } else {
+            showMailError()
         }
     }
     @IBOutlet weak var menuBarButton: UIBarButtonItem!
@@ -41,7 +51,29 @@ class ContactViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-   
+    func configureMailController() -> MFMailComposeViewController {
+        let mailComposerVC = MFMailComposeViewController()
+        mailComposerVC.mailComposeDelegate = self
+        
+        mailComposerVC.setCcRecipients(["mykhaylo.levchuk@ukr.net"])
+        mailComposerVC.setSubject("Hello")
+        mailComposerVC.setMessageBody("How are you doing", isHTML: false)
+        
+        return mailComposerVC
+    }
+    
+    func showMailError() {
+    let sendMailErrorAlert = UIAlertController(title: "Could not send e-mail", message: "Your device could not send e-mail", preferredStyle: .alert)
+        let dismiss = UIAlertAction(title: "OK", style: .default, handler: nil)
+        sendMailErrorAlert.addAction(dismiss)
+        
+        self.present(sendMailErrorAlert, animated: true, completion: nil)
+    }
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
+    }
+    
+    
 
 }

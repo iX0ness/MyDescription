@@ -44,6 +44,4 @@ class MusicViewController: UIViewController {
         queenWebView.loadRequest(URLRequest(url: url!))
     }
 
-   
-
 }

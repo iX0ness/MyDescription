@@ -242,7 +242,7 @@
                                         <rect key="frame" x="0.0" y="300" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DbY-fK-41y" id="mF8-dC-iox">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paper-plane-1" translatesAutoresizingMaskIntoConstraints="NO" id="XAl-mC-IEd">
@@ -543,6 +543,26 @@
                                     <action selector="twLink:" destination="EJ0-sT-24D" eventType="touchUpInside" id="VJH-Dq-PQd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yry-7w-qcs">
+                                <rect key="frame" x="25" y="473" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="MLp-l5-Wh6"/>
+                                    <constraint firstAttribute="height" constant="100" id="P9H-hY-7xs"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="e-mail"/>
+                                <connections>
+                                    <action selector="sendEmail:" destination="EJ0-sT-24D" eventType="touchUpInside" id="qJn-7G-pMj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kkc-g2-lex">
+                                <rect key="frame" x="155" y="511" width="65" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="AXB-bY-rzT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.91591495819613322" green="0.95078780865747425" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -552,12 +572,16 @@
                             <constraint firstItem="LKI-Ld-C7d" firstAttribute="leading" secondItem="sRz-r2-yUK" secondAttribute="leadingMargin" constant="15" id="NgT-La-2Ul"/>
                             <constraint firstItem="2tj-zd-MzE" firstAttribute="leading" secondItem="sRz-r2-yUK" secondAttribute="leadingMargin" constant="15" id="O6I-J2-UBB"/>
                             <constraint firstItem="5V7-sm-8va" firstAttribute="leading" secondItem="sRz-r2-yUK" secondAttribute="leading" constant="25" id="SvG-G5-sVi"/>
+                            <constraint firstItem="Yry-7w-qcs" firstAttribute="top" secondItem="LKI-Ld-C7d" secondAttribute="bottom" constant="15" id="cD8-Xz-ccf"/>
                             <constraint firstItem="LKI-Ld-C7d" firstAttribute="top" secondItem="2tj-zd-MzE" secondAttribute="bottom" constant="15" id="cqi-Z3-I0e"/>
                             <constraint firstItem="5V7-sm-8va" firstAttribute="top" secondItem="kpS-LS-O3S" secondAttribute="bottom" constant="64" id="hZc-OQ-B9J"/>
                             <constraint firstItem="9Wb-Cv-7Uq" firstAttribute="top" secondItem="MDT-oK-0KZ" secondAttribute="bottom" constant="90" id="idU-a3-Tdw"/>
                             <constraint firstItem="oFs-kj-R3A" firstAttribute="top" secondItem="kpS-LS-O3S" secondAttribute="bottom" constant="102" id="rmk-LX-qN8"/>
                             <constraint firstItem="oFs-kj-R3A" firstAttribute="leading" secondItem="5V7-sm-8va" secondAttribute="trailing" constant="15" id="smm-tC-nuE"/>
+                            <constraint firstItem="Kkc-g2-lex" firstAttribute="leading" secondItem="Yry-7w-qcs" secondAttribute="trailing" constant="30" id="uN0-mA-EqS"/>
                             <constraint firstItem="2tj-zd-MzE" firstAttribute="top" secondItem="5V7-sm-8va" secondAttribute="bottom" constant="15" id="wt8-V2-8hT"/>
+                            <constraint firstItem="Kkc-g2-lex" firstAttribute="top" secondItem="9Wb-Cv-7Uq" secondAttribute="bottom" constant="90" id="wyL-Zz-yN6"/>
+                            <constraint firstItem="Yry-7w-qcs" firstAttribute="leading" secondItem="sRz-r2-yUK" secondAttribute="leading" constant="25" id="yWN-d8-JYO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2EF-PE-p0v">
@@ -646,6 +670,7 @@
     </scenes>
     <resources>
         <image name="chicken-or-egg" width="380" height="389"/>
+        <image name="e-mail" width="256" height="256"/>
         <image name="fb-art" width="250" height="250"/>
         <image name="id-card-1" width="512" height="512"/>
         <image name="music-player-1" width="512" height="512"/>
