@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		320A584C1EB943D20083C435 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320A584B1EB943D20083C435 /* ContactViewController.swift */; };
 		32428C511EB7685B00E387F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32428C501EB7685B00E387F8 /* AppDelegate.swift */; };
 		32428C561EB7685B00E387F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32428C541EB7685B00E387F8 /* Main.storyboard */; };
 		32428C581EB7685B00E387F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32428C571EB7685B00E387F8 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		320A584B1EB943D20083C435 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		32428C4D1EB7685B00E387F8 /* MyDescription.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDescription.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32428C501EB7685B00E387F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32428C551EB7685B00E387F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				32428C6A1EB770B200E387F8 /* MusicViewController.swift */,
 				32428C6C1EB7723C00E387F8 /* AboutViewController.swift */,
 				32428C6E1EB8B4B200E387F8 /* MapViewController.swift */,
+				320A584B1EB943D20083C435 /* ContactViewController.swift */,
 			);
 			path = MyDescription;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32428C6D1EB7723C00E387F8 /* AboutViewController.swift in Sources */,
+				320A584C1EB943D20083C435 /* ContactViewController.swift in Sources */,
 				32428C691EB76F3D00E387F8 /* MenuTableViewController.swift in Sources */,
 				32428C6B1EB770B200E387F8 /* MusicViewController.swift in Sources */,
 				32428C511EB7685B00E387F8 /* AppDelegate.swift in Sources */,
