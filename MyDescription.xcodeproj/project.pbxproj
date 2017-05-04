@@ -18,6 +18,7 @@
 		32428C6B1EB770B200E387F8 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32428C6A1EB770B200E387F8 /* MusicViewController.swift */; };
 		32428C6D1EB7723C00E387F8 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32428C6C1EB7723C00E387F8 /* AboutViewController.swift */; };
 		32428C6F1EB8B4B200E387F8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32428C6E1EB8B4B200E387F8 /* MapViewController.swift */; };
+		32E12DE31EBB63A9007B4367 /* ChuckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E12DE21EBB63A9007B4367 /* ChuckViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		32428C6A1EB770B200E387F8 /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		32428C6C1EB7723C00E387F8 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		32428C6E1EB8B4B200E387F8 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		32E12DE21EBB63A9007B4367 /* ChuckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChuckViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				32428C6C1EB7723C00E387F8 /* AboutViewController.swift */,
 				32428C6E1EB8B4B200E387F8 /* MapViewController.swift */,
 				320A584B1EB943D20083C435 /* ContactViewController.swift */,
+				32E12DE21EBB63A9007B4367 /* ChuckViewController.swift */,
 			);
 			path = MyDescription;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				32428C511EB7685B00E387F8 /* AppDelegate.swift in Sources */,
 				32428C631EB7687C00E387F8 /* StartViewController.swift in Sources */,
 				32428C671EB76ADA00E387F8 /* SWRevealViewController.m in Sources */,
+				32E12DE31EBB63A9007B4367 /* ChuckViewController.swift in Sources */,
 				32428C6F1EB8B4B200E387F8 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +295,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = EDG9RYZ466;
 				INFOPLIST_FILE = MyDescription/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iX0ness.MyDescription;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -307,6 +312,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = EDG9RYZ466;
 				INFOPLIST_FILE = MyDescription/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iX0ness.MyDescription;
 				PRODUCT_NAME = "$(TARGET_NAME)";
