@@ -22,7 +22,7 @@ class MusicViewController: UIViewController {
             menuBarButton.target = self.revealViewController()
             menuBarButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-            getVideo1(videoCode: "TXXO9_3gb3o")
+            getVideo1(videoCode: "N_AcmtmegKI")
             getVideo2(videoCode: "jixYwUuW5U0")
         }
 

@@ -184,7 +184,7 @@
                                                         <constraint firstAttribute="width" constant="40" id="VcD-vD-08o"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My favourite music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0P-ii-oNQ">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0P-ii-oNQ">
                                                     <rect key="frame" x="88" y="17.5" width="259" height="25"/>
                                                     <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="20"/>
                                                     <color key="textColor" red="0.99942404029999998" green="0.081240159409999999" blue="0.3362436486" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -550,7 +550,7 @@
                                     <constraint firstAttribute="width" constant="100" id="5tF-OT-XF3"/>
                                     <constraint firstAttribute="height" constant="100" id="wJv-zD-vbM"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="fb-art"/>
+                                <state key="normal" title="Button" image="fb-icon"/>
                                 <connections>
                                     <action selector="fbLink:" destination="EJ0-sT-24D" eventType="touchUpInside" id="CAo-x1-Q2Z"/>
                                 </connections>
@@ -647,7 +647,7 @@
                                 <color key="textColor" red="0.99942404029999998" green="0.081240159409999999" blue="0.3362436486" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="I forgot to tell you about my hobbies. I'm fan of Chuck Norris'es quotes." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTM-Dp-dXv">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="I forgot to tell you about my hobbies. I'm fan of Chuck Norris'es jokes." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTM-Dp-dXv">
                                 <rect key="frame" x="0.0" y="149" width="375" height="121"/>
                                 <color key="backgroundColor" red="0.56770069140000001" green="1" blue="0.91379991400000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -663,15 +663,23 @@
                                 <color key="textColor" red="0.99942404029999998" green="0.081240159409999999" blue="0.3362436486" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wait few seconds please" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYD-y0-LeG">
+                                <rect key="frame" x="78" y="614" width="218" height="23"/>
+                                <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="18"/>
+                                <color key="textColor" red="0.99942404029999998" green="0.081240159409999999" blue="0.3362436486" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.56770069140000001" green="1" blue="0.91379991400000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="DI4-9A-IPE" firstAttribute="leading" secondItem="vlK-hB-8Jc" secondAttribute="leading" id="07q-GL-NXb"/>
                             <constraint firstItem="LTM-Dp-dXv" firstAttribute="top" secondItem="Vkl-J1-g44" secondAttribute="bottom" constant="10" id="4q0-QI-YVh"/>
+                            <constraint firstItem="oH8-2p-1eg" firstAttribute="top" secondItem="uYD-y0-LeG" secondAttribute="bottom" constant="30" id="7X9-BE-tyH"/>
                             <constraint firstItem="Vkl-J1-g44" firstAttribute="top" secondItem="Jbg-fr-Hvr" secondAttribute="bottom" constant="50" id="BjJ-JC-F1a"/>
                             <constraint firstItem="Vkl-J1-g44" firstAttribute="leading" secondItem="vlK-hB-8Jc" secondAttribute="leading" constant="60" id="GaL-iB-ICm"/>
                             <constraint firstItem="DI4-9A-IPE" firstAttribute="top" secondItem="LTM-Dp-dXv" secondAttribute="bottom" constant="40" id="Qqc-4U-CIz"/>
                             <constraint firstAttribute="trailing" secondItem="Vkl-J1-g44" secondAttribute="trailing" constant="60" id="Snt-rh-nBp"/>
+                            <constraint firstItem="uYD-y0-LeG" firstAttribute="centerX" secondItem="vlK-hB-8Jc" secondAttribute="centerX" id="UZt-MG-wlC"/>
                             <constraint firstItem="LTM-Dp-dXv" firstAttribute="leading" secondItem="vlK-hB-8Jc" secondAttribute="leading" id="ghW-7O-Mek"/>
                             <constraint firstItem="oH8-2p-1eg" firstAttribute="top" secondItem="LTM-Dp-dXv" secondAttribute="bottom" constant="397" id="vsJ-WP-Qmu"/>
                             <constraint firstAttribute="trailing" secondItem="DI4-9A-IPE" secondAttribute="trailing" id="wHA-gX-Io7"/>
@@ -785,7 +793,7 @@
         <image name="chicken-or-egg" width="380" height="389"/>
         <image name="chuck-norris" width="297" height="263"/>
         <image name="e-mail" width="256" height="256"/>
-        <image name="fb-art" width="250" height="250"/>
+        <image name="fb-icon" width="768" height="768"/>
         <image name="id-card-1" width="512" height="512"/>
         <image name="music-player-1" width="512" height="512"/>
         <image name="myPhoto" width="445" height="581"/>

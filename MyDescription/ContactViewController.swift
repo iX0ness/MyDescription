@@ -55,7 +55,8 @@ class ContactViewController: UIViewController, MFMailComposeViewControllerDelega
         let mailComposerVC = MFMailComposeViewController()
         mailComposerVC.mailComposeDelegate = self
         
-        mailComposerVC.setCcRecipients(["mykhaylo.levchuk@ukr.net"])
+        
+        mailComposerVC.setToRecipients(["mykhaylo.levchuk@ukr.net"])
         mailComposerVC.setSubject("Hello")
         mailComposerVC.setMessageBody("How are you doing", isHTML: false)
         
