@@ -45,7 +45,4 @@ class MapViewController: UIViewController {
         return true
     }
     
-
-  
-
 }

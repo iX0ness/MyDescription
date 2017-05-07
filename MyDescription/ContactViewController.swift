@@ -16,16 +16,19 @@ class ContactViewController: UIViewController, MFMailComposeViewControllerDelega
             UIApplication.shared.openURL(url as URL)
         }
     }
+    
     @IBAction func vkLink(_ sender: Any) {
         if let url = NSURL(string: "https://vk.com/id18167188") {
             UIApplication.shared.openURL(url as URL)
         }
     }
+    
     @IBAction func twLink(_ sender: Any) {
         if let url = NSURL(string: "https://twitter.com/iX0ness") {
             UIApplication.shared.openURL(url as URL)
         }
     }
+    
     @IBAction func sendEmail(_ sender: AnyObject) {
         let mailComposeViewController = configureMailController()
         if MFMailComposeViewController.canSendMail() {
@@ -35,6 +38,7 @@ class ContactViewController: UIViewController, MFMailComposeViewControllerDelega
             showMailError()
         }
     }
+    
     @IBOutlet weak var menuBarButton: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,6 +79,4 @@ class ContactViewController: UIViewController, MFMailComposeViewControllerDelega
         controller.dismiss(animated: true, completion: nil)
     }
     
-    
-
 }

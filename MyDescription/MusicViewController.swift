@@ -10,8 +10,6 @@ import UIKit
 
 class MusicViewController: UIViewController {
 
-    
-    
     @IBOutlet weak var menuBarButton: UIBarButtonItem!
     @IBOutlet weak var queenWebView: UIWebView!
     @IBOutlet weak var acdcWebView: UIWebView!
@@ -33,13 +31,12 @@ class MusicViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func getVideo1(videoCode:String)
-    {
+    func getVideo1(videoCode:String) {
         let url = URL(string: "https://www.youtube.com/embed/\(videoCode)")
         acdcWebView.loadRequest(URLRequest(url: url!))
     }
-    func getVideo2(videoCode:String)
-    {
+    
+    func getVideo2(videoCode:String) {
         let url = URL(string: "https://www.youtube.com/embed/\(videoCode)")
         queenWebView.loadRequest(URLRequest(url: url!))
     }

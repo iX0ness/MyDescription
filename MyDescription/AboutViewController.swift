@@ -26,9 +26,6 @@ class AboutViewController: UIViewController {
         }
     }
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,8 +34,6 @@ class AboutViewController: UIViewController {
             menuBarButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-        
-        
         
     }
 
